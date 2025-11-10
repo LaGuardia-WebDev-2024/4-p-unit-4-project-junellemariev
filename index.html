@@ -2,12 +2,12 @@
 Requirements
 [ yes ] Three Distinct CSS font-family Declarations
 [ yes ] One Google Font or Uploaded Font
-[  ] An Unordered **or** Ordered List (<ul> or <ol>)
+[ yes ] An Unordered **or** Ordered List (<ul> or <ol>)
 [ yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include :hover Effect 
-[ no ] Feature 2 - Change the <li> markers
+[ yes ] Feature 2 - Change the <li> markers
 [ no ] Feature 3 - Change the Favicon
 [ no ] Feature 4 - Include Hand Drawn Border
 [ no ] Feature 5 - Use background-blend-mode: overlay
@@ -65,12 +65,29 @@ Select ONE Additional Feature to Add
   }
 
   img {
-    border-radius: 10%
+    border-radius: 10%;
+    float: right
   }
 
   body {
   cursor: cloud 
   }
+
+  ul li::marker {
+      content: " ☁️ ";
+      font-size: 20px;
+      color: #bed9ff;
+    }
+
+  ul {
+    float:center;
+    font-size: 30px;
+    color:rgb(125, 150, 203)
+  }
+
+   a {
+    color:rgb(125, 150, 203)
+   }
 
   </style>
 </head>
@@ -81,34 +98,51 @@ Select ONE Additional Feature to Add
   <h2>Welcome to Our Village!</h3>
   <hr>
 
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh-NkR8GeIiVCUzechYL3tLzkg0VA-kewJRg&s" width="400px">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh-NkR8GeIiVCUzechYL3tLzkg0VA-kewJRg&s" width="600px">
 
-    <p float=right>About Content Element #1</p>
+    <p>The village consists of a town of houses and a city-like<br> village. In the main town circle, you can find the Supermarket, <br>the Hospital, and the Cloud Nursery! Other areas beyond the <br>main circle include:</p>
 
-  <br><br>
+    <ul>
+      <li><a href="#street">Shopping Street</a></li>
+      <li><a href="#cafe">Cozy Cafe</a></li>
+      <li><a href="#home">The Neighborhood</a></li>
+      <li>Amusement Park</li>
+      <li>Shopping Mall</li>
+    </ul>
 
-  <h3>~ Shopping Street ~</h3>
+  <br><br><br><br><br><br><br>
+
+  <h3 id="street">~ Shopping Street ~</h3>
   <hr>
-  <p>About Content Element #2</p>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCb6fmrNjd6Vi93hUwO_D-qBMZn6Eis27_Lw&s" width="400px">
-  <br><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCb6fmrNjd6Vi93hUwO_D-qBMZn6Eis27_Lw&s" width="600px">
 
-  <h3>~ Cozy Cafe! ~</h3>
+  <p>Shopping Street is the go-to place for hangouts with <br>friends like Milk, Mocha, and Chiffon! It has the Music <br>Store, the Ice Cream Shop, the Book Store, and the Flower <br>Shop. You can take a ton of cute photos and buy lots of <br>interactable supplies here, too! Sometimes one of <br>Cinnamoroll's friends will ask you to buy them something <br>from here as part of a quest. </p>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h3 id="cafe">~ Cozy Cafe! ~</h3>
   <hr>
-  <p>About Content Element #3</p>
 
-  <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/cinnamoroll-cloud-land-codes-2.jpg?q=49&fit=crop&w=825&dpr=2" width="400px">
+  <img src="https://tr.rbxcdn.com/180DAY-994fc9303a026df4a1fae49e77578d25/500/280/Image/Jpeg/noFilter" width="600px">
 
-  <img src="https://tr.rbxcdn.com/180DAY-994fc9303a026df4a1fae49e77578d25/500/280/Image/Jpeg/noFilter" width="400px">
-  <br><br>
+  <p>Cinnamoroll's Cozy Cafe is a place where you can earn<br> money baking delicious desserts and unique drinks. <br>You can work as both a chef or a waiter! <br>It's fun talking to the other Sanrio characters, too.</p>
 
- <h3>~ Home Sweet Home ~</h3>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ <h3 id="home">~ Home Sweet Home ~</h3>
   <hr>
-  <p>About Content Element #3</p>
 
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu7BVqs3gyNEnxdcELboETvjbgB62UHxgHPg&s" width="400px">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu7BVqs3gyNEnxdcELboETvjbgB62UHxgHPg&s" width="600px">
 
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHyQZPoKUxLdEmlDnuQo4uy8h_-sYoUcBrkw&s" width="400px">
+  <p>Here's your own personalized home where you can raise <br>your Cloud Spirits by giving them food, putting them <br>to bed, and playing games with them! You can also <br>customize your home by buying furniture and editing<br> your layout. Oftentimes, each floor is purchased with <br>its own pre-decorated furniture.</p>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHyQZPoKUxLdEmlDnuQo4uy8h_-sYoUcBrkw&s" width="600px">
+
+<p> In your cozy little home, you also have your own garden! <br>You can plant carrots, sunflowers, pumpkins, cherries, <br>and anything else that's available in the Seed Shop. If <br>you're lucky enough, sometimes you'll be able to grow a <br>piece of plant-themed furniture instead of a plant. </p>
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </body>
 </html>
